@@ -60,3 +60,8 @@ def test_when_clicked_next_button_turns_page():
     company_name_2 = driver.find_element(by=By.CLASS_NAME,
                                          value='css-xuk5ye').text
     assert company_name_1 != company_name_2
+
+
+def test_how_many_ages_does_the_query_brings():
+    job_ages = driver.find_elements(by=By.XPATH, value='//div[@data-test="job-age"]')
+    assert 30 == len(job_ages)

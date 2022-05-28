@@ -23,8 +23,8 @@ def get_jobs(keywords: list, chrome_path, slp_time, num_jobs):
         time.sleep(slp_time)
         job_buttons = driver.find_elements(by=By.CLASS_NAME,
                                            value='react-job-listing')
-
-        for job_button in job_buttons:
+        job_ages = driver.find_elements(by=By.XPATH, value='//div[@data-test="job-age"]')
+        for age, job_button in enumerate(job_buttons):
             try:
                 driver.find_element(by=By.CSS_SELECTOR, value='[alt="Close"]').click()
             except NoSuchElementException:
@@ -53,6 +53,7 @@ def get_jobs(keywords: list, chrome_path, slp_time, num_jobs):
                                                     value='css-1j389vi').text
                     job_description = driver.find_element(by=By.CLASS_NAME,
                                                           value='jobDescriptionContent').text
+                    job_age = job_ages[age].text
                     job_salary = 'Not given'
                     rating = 'Not given'
                     sector = 'Not given'
@@ -87,6 +88,7 @@ def get_jobs(keywords: list, chrome_path, slp_time, num_jobs):
                             'rating': rating,
                             'sector': sector,
                             'industry': industry,
+                            'job_age': job_age,
                         },
                         index=[0],
                     )

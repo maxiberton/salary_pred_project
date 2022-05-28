@@ -1,5 +1,6 @@
 import pandas as pd
 
+from data_cleaning import clean_company_name, clean_and_sep_est_salary, get_state_for_each_location
 
 jobMockData = {
     'company_name': 'LG Energy Solution Michigan, Inc.',
@@ -14,7 +15,7 @@ jobMockData = {
 
 
 def get_mock_data():
-    df = pd.DataFrame(data=jobMockData)
+    df = pd.DataFrame(data=jobMockData, index=[0])
     return df
 
 
@@ -23,18 +24,20 @@ mock_df = get_mock_data()
 
 def test_clean_company_name():
     df = mock_df.copy()
-    # df.company_name = df.company_name.str.split('\n')[0]
     df = clean_company_name(df)
     assert 'LG Energy Solution Michigan, Inc.' == df.company_name[0]
 
 
-def test_clean_est_salary():
+def test_clean_and_sep_est_salary():
     df = mock_df.copy()
-    # df.est_salary = df.est_salary.str.split('(')[0]
-    # df.est_salary = df.est_salary.str.replace('$', '')
-    # df.est_salary = df.est_salary.str.replace('K', '000')
-    # df.est_salary = df.est_salary.str.replace(' ', '')
-    # df.est_salary = df.est_salary.str.replace('Per Hour', '')
-    # df.est_salary = df.est_salary.str.replace('Employer Provided Salary: ', '')
-    df = clean_est_salary(df)
-    assert '66-120' == df.est_salary[0]
+    df = clean_and_sep_est_salary(df)
+    assert 66000 == df.min_salary[0]
+    assert 120000 == df.max_salary[0]
+
+
+def test_get_state_for_each_location():
+    df = mock_df.copy()
+    df = get_state_for_each_location(df)
+    assert 'MA' == df.state[0]
+
+
