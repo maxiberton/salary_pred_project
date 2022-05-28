@@ -1,10 +1,14 @@
 from selenium.common.exceptions import NoSuchElementException, ElementClickInterceptedException
-from selenium import webdriver
 import time
 import pandas as pd
-from glassdoor_scrapper import get_jobs
+from selenium_web_scraper import get_jobs
 
 chrome_path = "/Users/maxibertonalbornoz/Documents/Python/data-science-and-ml/salary_pred/chromedriver"
-slp_time = 3
+slp_time = 1
 
-df = get_jobs('data scientist', 5, False, chrome_path, slp_time)
+df = get_jobs(['data', 'scientist'], chrome_path, slp_time, 1000)
+
+df.to_csv(
+    '/Users/maxibertonalbornoz/Documents/Python/data-science-and-ml/salary_pred/test.csv',
+    index=False
+)
