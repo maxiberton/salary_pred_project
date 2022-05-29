@@ -14,16 +14,14 @@ def clean_and_sep_est_salary(df):
     df['est_salary'] = df['est_salary'].str.strip().str.replace(' ', '')
     df['est_salary'] = df['est_salary'].str.replace('PerHour', '')
     df['est_salary'] = df['est_salary'].str.replace('EmployerProvidedSalary:', '')
-    df['est_salary'] = df['est_salary'].str.replace('Notgiven', '0.0')
+    df['est_salary'] = df['est_salary'].str.replace('Notgiven', 'nan')
 
-    df['min_salary'] = df['est_salary'].apply(lambda x: x.split('-')[0])
+    df['min_salary'] = df.loc[df.est_salary != '-1.0', 'est_salary'].apply(lambda x: x.split('-')[0])
     df['min_salary'] = df['min_salary'].astype(float)
     df['max_salary'] = df['est_salary'].apply(lambda x: x.split('-')[1] if len(x.split('-')) > 1 else x)
     df['max_salary'] = df['max_salary'].astype(float)
-
     df['min_salary'] = df['min_salary'].apply(lambda x: x * 40 * 52 if x < 100 else x)
     df['max_salary'] = df['max_salary'].apply(lambda x: x * 40 * 52 if x < 150 else x)
-
     df['min_salary'] = df['min_salary'].fillna(round(df.min_salary.mean(), 2))
     df['max_salary'] = df['max_salary'].fillna(round(df.max_salary.mean(), 2))
     return df
