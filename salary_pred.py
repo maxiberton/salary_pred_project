@@ -23,7 +23,7 @@ df = get_tools_count(df)
 
 df = df[[
     'company_name', 'job_title', 'location', 'state', 'est_salary', 'min_salary', 'max_salary',
-    'rating', 'sector', 'industry', 'job_age', 'job_description',
+    'python', 'spark', 'excel', 'aws', 'rating', 'sector', 'industry', 'job_age', 'job_description',
 ]]
 
-df.to_csv('jobs_data.csv')
+df.to_csv('jobs_data.csv', index=False)
