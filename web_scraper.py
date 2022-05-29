@@ -15,7 +15,7 @@ def get_jobs(keywords: list, chrome_path, slp_time, num_jobs):
     service_obj = Service(chrome_path)
     driver = webdriver.Chrome(service=service_obj, options=options)
     driver.set_window_size(1400, 1000)
-    url = 'https://www.glassdoor.com/Job/jobs.htm?sc.keyword=' + ' '.join(keywords)
+    url = 'https://www.glassdoor.com/Job/jobs.htm?sc.keyword=' + '+'.join(keywords)
     driver.get(url)
     jobs = pd.DataFrame()
 
@@ -53,6 +53,7 @@ def get_jobs(keywords: list, chrome_path, slp_time, num_jobs):
                                                     value='css-1j389vi').text
                     job_description = driver.find_element(by=By.CLASS_NAME,
                                                           value='jobDescriptionContent').text
+
                     job_age = job_ages[age].text
                     job_salary = 'Not given'
                     rating = 'Not given'
@@ -60,11 +61,12 @@ def get_jobs(keywords: list, chrome_path, slp_time, num_jobs):
                     industry = 'Not given'
 
                     collected_successfully = True
-
-                    if driver.find_element(by=By.CLASS_NAME, value='css-1hbqxax'):
-                        job_salary = driver.find_element(by=By.CLASS_NAME, value='css-1hbqxax').text
-                    if driver.find_element(by=By.CLASS_NAME, value='css-1m5m32b'):
-                        rating = driver.find_element(by=By.CLASS_NAME, value='css-1m5m32b').text
+                    if driver.find_element(by=By.XPATH,
+                                           value='//*[@id="JDCol"]/div/article/div/div[1]/div/div/div[1]/div[3]/div[1]/div[4]/span'):
+                        job_salary = driver.find_element(by=By.XPATH,
+                                                         value='//*[@id="JDCol"]/div/article/div/div[1]/div/div/div[1]/div[3]/div[1]/div[4]/span').text
+                    if driver.find_element(by=By.CSS_SELECTOR, value='.css-1m5m32b'):
+                        rating = driver.find_element(by=By.CSS_SELECTOR, value='.css-1m5m32b').text
                     if driver.find_element(by=By.XPATH, value='//*[text()="Industry"]/following-sibling::span'):
                         industry = driver.find_element(by=By.XPATH,
                                                        value='//*[text()="Industry"]/following-sibling::span').text
@@ -81,14 +83,14 @@ def get_jobs(keywords: list, chrome_path, slp_time, num_jobs):
                     pd.DataFrame(
                         {
                             'company_name': company_name.split('\n')[0],
-                            'location': location,
                             'job_title': job_title,
+                            'location': location,
                             'est_salary': job_salary,
-                            'job_description': job_description,
                             'rating': rating,
                             'sector': sector,
                             'industry': industry,
                             'job_age': job_age,
+                            'job_description': job_description,
                         },
                         index=[0],
                     )
