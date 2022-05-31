@@ -1,5 +1,5 @@
-company_name,job_title,location,est_salary,rating,sector,industry,job_age,job_description
-Talentheed Inc,Junior Data Scientist,Remote,Employer Provided Salary:$57K - $119K,Not given,Not given,Not given,16d,"Responsibilities:
+company_name,job_title,location,est_salary,rating,sector,industry,job_age,year_founded,job_description
+Talentheed Inc,Junior Data Scientist,Remote,Employer Provided Salary:$57K - $119K,-1.0,-1.0,-1.0,18d,-1.0,"Responsibilities:
 Identify valuable data sources and automate collection processes
 Undertake preprocessing of structured and unstructured data
 Analyze large amounts of information to discover trends and patterns
@@ -8,11 +8,51 @@ Combine models through ensemble modeling
 Present information using data visualization techniques
 Propose solutions and strategies to business challenges
 Collaborate with engineering and product development teams"
-The Coca-Cola Company,Data Scientist 2,"Atlanta, GA",$77K - $155K (Glassdoor est.),4.0,Manufacturing,Food & Beverage Manufacturing,25d,"About Enterprise Data and Analytics:
+Spotify,"Data Scientist, Spotify Advertising","New York, NY",$78K - $182K (Glassdoor est.),4.2,Information Technology,Internet & Web Services,30d+,2006,"Data, Research & Insights
+Data Science
+At Spotify Advertising, our part of that mission is to build the next generation advertising platform for audio which can scale the freemium experience for hundreds of millions of fans and tens of thousands of advertisers. This scale brings unique challenges as well as tremendous opportunities to define the insights product for our business.
+Location
+New York or Remote Americas
+Job type"
+The Coca-Cola Company,Data Scientist 2,"Plano, TX",$82K - $164K (Glassdoor est.),4.0,Manufacturing,Food & Beverage Manufacturing,3d,1886,"About Enterprise Data and Analytics:
 The Data and Analytics (DnA) Services organization is transforming how Coca-Cola leverages data across the entire company. We passionately develop and scale leading data capabilities for Coca-Cola, driving growth and delighting consumers through innovation and agile, insight-led decision making.
 Job Description Summary:
 You will play a critical role in the growing Data Science Services team in DnA, where you will be responsible for developing advanced analytics and machine learning models across domains including: marketing, supply chain optimization, forecasting, digital transformation, and food and beverage science. You will work closely with IT partners, process owners and business stakeholders to deliver impactful data science solutions at significant scale. You will have the opportunity to do your best work every day and deliver disruptive innovation by tapping into new datasets, leveraging the latest cloud technologies, and being supported by a robust analytics and IT organization."
-ERPMark Inc,Data Scientist,Remote,Employer Provided Salary:$55 - $65 Per Hour,4.0,Management & Consulting,Business Consulting,30d+,"Role: Data Scientist
+Roche,Data Scientist - (Remote),"Indianapolis, IN",Employer Provided Salary:$90K - $135K,4.2,Pharmaceutical & Biotechnology,Biotech & Pharmaceuticals,19d,1896,"This is a remote opportunity.
+The Opportunity:
+This is an exciting time to join Roche Diagnostics! You will help Roche continue to progress through the data maturity model using data science methods and principles to generate deeper insights from a great variety of internal and external data sources. To achieve this, you will identify needs, lead the design and implementation of analytical solutions, provide advice and consulting support to our key business stakeholders and demonstrate value by executing proof-of-concept initiatives and prototyping analytical solutions to answer business questions.
+
+As a Data Scientist, you will position data science as a key competency within the enterprise and be responsible for creating value from data assets using advanced analytics capabilities including data science, machine learning, and artificial intelligence methodologies to identify critical business risk and opportunities for Roche.
+
+
+Individual contributor"
+Yelp,Data Scientist (Remote),Remote,Employer Provided Salary:$88K - $220K,3.5,Information Technology,Internet & Web Services,30d+,2004,"At Yelp, it’s our mission to connect people with great local businesses. Yelp’s unique dataset contains billions of interactions between users and businesses around the globe, from a review of a coffee shop to requesting a repair quote with a photo of a leaky faucet. Data Scientists at Yelp work to make sense of these interactions to deliver impactful analyses and products to our users, business partners and the general public.
+
+The Data Science & Analytics team performs analyses, builds models, and designs experiments that directly impact Yelp’s products and users. Our teams sit in Yelp’s central product management organization and work directly with cross-functional leaders to understand quantitatively how our products are performing and where the largest opportunities are. We are adept at tasks like modeling user preferences, inference from user and marketplace experiments, and generating insights about the health of local economies. With diverse backgrounds and expertise, we strive for learning and growth in a collaborative environment.
+
+This opportunity is fully remote and does not require you to be located in any particular state within the US. We welcome applicants from throughout the US."
+Durham County,DATA SCIENTIST,"Durham, NC",Employer Provided Salary:$65K - $117K,3.1,Government & Public Administration,Municipal Agencies,30d+,Government,"Durham County Government employs approximately 1,900 employees that work towards providing needed services throughout the community. With a wide array of services, Durham County Government is at the heart of a rapidly growing and diverse area offering residents, employees and visitors exciting opportunities to live, work, grow and play.
+
+DEPARTMENT:
+Fire Marshal/Emergency Mgmt
+
+DATE POSTED:
+July 12, 2021"
+BDSA,Data Scientist (Junior),"Louisville, CO",Employer Provided Salary:$90K - $110K,1.4,-1.0,-1.0,30d+,Company - Private,"Job Summary: The Analytics team empowers BDSA through the development of syndicated market research products based on various datasets. As a Junior Data Scientist, you will work on highly complex projects supporting the Product and Professional Services teams with data wrangling, data cleaning, and data reporting tools and techniques.
+Your day-to-day activities will involve using heterogeneous datasets to derive insights and automation. For example, combining public weather data with proprietary sales data to identify trends and build forecasts, or using ML/AI tools to parse large datasets and deduplicate data.
+QC/QA processes are critical elements of this work and you will spend substantial time automating and managing automated QC/QA systems. The datasets grow substantially day by day and automation of the QC/QA environment is a top priority.
+This is a fast-paced environment with a variety of challenges, many of which are driven by external factors. If you're excited to work on new projects, constantly find ways to overcome obstacles, and find joy in solving problems than this may be the job for you. As a junior data scientist, you'll work under the direction of senior team members and be expected to rapidly learn new tools and techniques. While work will be guided by more seasoned team members, your intellect, technical skills, and creativity will be highly valued and there is room for advancement."
+The Hershey Company,Data Scientist,"Hershey, PA",$65K - $116K (Glassdoor est.),3.9,Manufacturing,Food & Beverage Manufacturing,30d+,1894,"Title: Data Scientist
+Location: Hershey, PA
+NOTE: ***This position can be 100% remote***
+
+Position Description:
+
+The Enterprise Data organization drives value for Hershey by providing high-quality, well governed data to the Enterprise for analytics and decision-making. The Data Scientist will be part of the Enterprise Data Science team, working with Hershey business partners, technical engineers, data architects, and project managers to ensure data science standards adhere to company best practice and help to deliver rapid impactful benefits. You will act as a trusted advisor for Hershey business partners to build new, data-driven, machine-intelligent capabilities that impact the business. You will work with large volumes of data, innovative technologies, and advanced methods to solve real business problems. You'll design and run experiments, research new algorithms, and find new ways of optimizing risk, profitability, and the customer experience. You will work with a diverse team of business analysts, technical engineers, data architects, and project managers to deliver outcomes aligned with our business partner’s strategy. In addition, you will work directly with the Director of Data Science to ensure consistency and compliance of deliverables to frameworks and governance processes."
+Zelus Analytics,(Junior / Senior) Data Scientist - Sports Analytics,"Austin, TX",Employer Provided Salary:$75K - $150K,-1.0,-1.0,-1.0,14d,Company - Private,"We are seeking data scientists with a passion for sports to implement, automate, and optimize the quantitative models that power our world-class sports intelligence platforms in baseball, basketball, cricket, football (American), hockey, soccer, and tennis. Through your work, you can support the professional teams in our exclusive partner network in their efforts to compete and win championships. We currently have both entry-level and senior positions available, allowing us to consider qualified candidates with a wide range of experience levels.
+Zelus Analytics unites a fast-growing startup environment with a research-focused culture that embraces our core values of integrity, innovation, and inclusion. We pride ourselves on providing meaningful mentorship that offers our team the opportunity to develop and expand their skill sets while also engaging with the broader analytics community. In doing so, we hope to create a new path for a more diverse group of highly talented people to push the cutting edge of sports analytics.
+We believe that a diverse team is vital to building the world's best sports intelligence platform. Thus, we strongly encourage you to apply if you identify with any marginalized community across race, ethnicity, gender, sexual orientation, veteran status, or disability. At Zelus, we are committed to creating an inclusive environment where all of our employees are enabled and empowered to succeed and thrive."
+ERPMark Inc,Data Scientist,Remote,Employer Provided Salary:$55 - $65 Per Hour,4.0,Management & Consulting,Business Consulting,12d,Company - Private,"Role: Data Scientist
 Location: 100% Remote
 Duration: Long Term
 NOTE: This is a W2 Role.
@@ -26,116 +66,3 @@ Python
 PySpark
 Project Information:
 The incumbent will provide critical insights to business stakeholders that will guide decisions on service updates and new functionality to accelerate growth. They are looking for a self-motivated analyst with experience performing advanced analytics to solve large problems."
-Avis Budget Group,Associate Data Scientist,"Parsippany, NJ",Employer Provided Salary:$60K - $74K,3.4,Transportation & Logistics,Car & Truck Rental,17d,"Associate Data Scientist
-The role of an associate data scientist is to leverage advanced data analytics and data science skills, techniques and models efficiently and effectively across many different areas and lines of the business, to help the organization best understand and predict actions, behaviors, trends, and areas of opportunity. This person will work as part of one or more product teams focused on empowering our organization to make the best decisions possible by leveraging data. We have teams focused on analytics and data science across many critical areas, including marketing, customer service, fleet, supply chain and operations.
-This person will have the opportunity to contribute to helping solve problems like:
-1. How to best segment and understand our customers so we can connect with them in the most personalized manner to drive more engagement and create a differentiated customer experience"
-Biolife Plasma Services,Junior Data Scientist,"Bannockburn, IL",$66K - $134K (Glassdoor est.),3.3,Healthcare,Health Care Services & Hospitals,30d+,"By clicking the “Apply” button, I understand that my employment application process with Takeda will commence and that the information I provide in my application will be processed in line with Takeda’s Privacy Notice and Terms of Use. I further attest that all information I submit in my employment application is true to the best of my knowledge.
-Job Description
-About BioLife Plasma Services
-Every day at BioLife, we feel good knowing that what we do helps improve the lives of patients with rare diseases. While you focus on our donors, we’ll support you. We offer a purpose you can believe in, a team you can count on, opportunities for career growth, and a comprehensive benefits program, all in a fast-paced, friendly environment.
-Bannockburn, IL
-Employee
-Regular
-Full time"
-"LG Energy Solution Michigan, Inc.",Data Scientist,"Westborough, MA",$66K - $120K (Glassdoor est.),3.2,Manufacturing,Chemical Manufacturing,30d+,"LG Energy Solution (LGES) Vertech is a technology leader in Li-ion based battery energy storage systems (BESS). We provide customizable clean energy storage solutions for renewables integration, commercial & industrial application, and utility-scale installations. LGES-Vertech plays a key role in EV mobility revolution that’s underway. LGES -Vertech is a vertically integrated company providing batteries, power-conversion system, system integration, and operations. LGES-Vertech has installed and maintained services for 1.2+GWHr of BESS in 180+ projects worldwide. Our proprietary AEROS® Energy Management Suite houses diverse data-related services such as data warehousing, remote monitoring, data visualization, and predictive maintenance.
-The Role
-LGES-Vertech is looking for motivated Data Scientist to join their Data Science and Data Analysis group and be part of renewable energy revolution and be pioneer in creating data science products for the energy systems. The individual in this position would be responsible for solving some of the most complex and challenging issues in BESS products. The data scientist will have the opportunity to innovate new algorithms, expand our suite of data-driven products, and apply data science techniques to provide BESS which is safe, highly available, and efficiently interoperate in the energy market."
-The Coca-Cola Company,Data Scientist 2,"Plano, TX",$82K - $164K (Glassdoor est.),4.0,Manufacturing,Food & Beverage Manufacturing,1d,"About Enterprise Data and Analytics:
-The Data and Analytics (DnA) Services organization is transforming how Coca-Cola leverages data across the entire company. We passionately develop and scale leading data capabilities for Coca-Cola, driving growth and delighting consumers through innovation and agile, insight-led decision making.
-Job Description Summary:
-You will play a critical role in the growing Data Science Services team in DnA, where you will be responsible for developing advanced analytics and machine learning models across domains including: marketing, supply chain optimization, forecasting, digital transformation, and food and beverage science. You will work closely with IT partners, process owners and business stakeholders to deliver impactful data science solutions at significant scale. You will have the opportunity to do your best work every day and deliver disruptive innovation by tapping into new datasets, leveraging the latest cloud technologies, and being supported by a robust analytics and IT organization."
-Brilliant Infotech,Sr IT Data Scientist,Remote,Employer Provided Salary:$65 - $70 Per Hour,4.5,Information Technology,Information Technology Support Services,1d,"Job Description:
-The IT Data Scientist position is responsible for defining, planning and managing data analysis initiatives that applies data science principles and technology to develop innovative, high-quality technology solutions to solve complex operational problems and process challenges.
-The IT Data Scientist identifies opportunities through the use of statistical, algorithmic, mining and visualization techniques.
-The role requires advanced analytical skills and proficiency at integrating and preparing large, varied datasets, architecting specialized data structures and computing environments, and effectively communicating results.
-The IT Data Scientist works closely with IT application and database teams, along with business and operational subject matter experts."
-"Infinity Consulting Solutions, Inc.",Data Scientist,"Atlanta, GA",Employer Provided Salary:$90K - $100K,3.8,Human Resources & Staffing,HR Consulting,4d,"TITLE: DATA SCIENTIST
-Location: Atlanta
-A growing analytics firm is seeking an experienced Data Scientist to join their established team. As a Data Scientist, you will be part of the Innovation and Special Projects team, an inventive and exciting team that designs and builds crucial applications for all stakeholders. You will work closely with internal stakeholders to understand business requirements and create processes and applications to address those requirements. You should be highly analytical with a knack for analysis, math and statistics. We also want to see a passion for Machine Learning and research. Excellent communication skills are required.
-
-Responsibilities:
-Work with internal and external stakeholders to identify inefficiencies and pain points in current solutions and processes and translate those to functional requirements
-Analyze and utilize large data sets to determine trends, predict outcomes, and create value for our customers
-
-
-
-
-
-
-At Infinity Consulting Solutions our mission is to cultivate successful long term relationships with candidates and clients matching the right candidate with the right client. We believe technology cannot replace the real personal relationships we cultivate. We reject the notion that technology alone is the answer to staffing which is why we our successful partnerships rely on collaboration NOT automation. ICS has been providing flexible staffing solutions for over 20 years in Information Technology, Compliance, Accounting / Finance and Corporate Support. Our staffing solutions include Contract, Temp to Perm and Permanent Placement.
-ICS is an Equal Opportunity Employer."
-Brilliant Infotech,IT Data Scientist Sr (III),Remote,Employer Provided Salary:$70 - $75 Per Hour,4.5,Information Technology,Information Technology Support Services,19d,"Job Title: IT Data Scientist Sr (III)
-Location: Remote
-Duration: 12 months
-Role Type: Contract
-Role Description:
-The IT Data Scientist position is responsible for defining, planning, and managing data analysis initiatives that apply data science principles and techniques to develop innovative, high-quality technology solutions to solve complex operational problems and process challenges."
-Electric Power Research Institute,Student Employee - Data Science,"Charlotte, NC",$51K - $115K (Glassdoor est.),5.0,Not given,Not given,10d,"Job Title:
-Student Employee - Data Science
-Location:
-Charlotte, NC
-Job Summary and Description:
-This role is primarily related to Data Science, so degree programs focused on scientific disciplines in this area are preferred.
-Candidates will support subject matter experts and data scientists in a variety of data analysis tasks that may include: literature review; data review and preparation; model development and implementation; and model results review and assessment.
-This opportunity will require the candidate to be in a degree program that is focused on engineering or scientific disciplines. These include, but are not limited to:"
-Verizon,Senior Data Scientist,"Colorado Springs, CO",Employer Provided Salary:$95K - $176K,3.9,Telecommunications,Telecommunications Services,1d,"When you join Verizon
-Verizon is one of the world's leading providers of technology and communications services, transforming the way we connect across the globe. We're a diverse network of people driven by our shared ambition to shape a better future. Here, we have the ability to learn and grow at the speed of technology, and the space to create within every role. Together, we are moving the world forward - and you can too. Dream it. Build it. Do it here.
-What you’ll be doing...
-You will drive profitable growth and business innovation by applying cutting-edge machine learning techniques and AI technology. You will lead data science projects that drive product personalization, marketing effectiveness, channel optimization, better customer experience, and operation efficiency. You will work closely with a team of talented data scientists, Big Data engineers, and software developers and play a key role in developing and delivering the next generation AI/ML solutions to the business."
-The Coca-Cola Company,Data Scientist 2,"Plano, TX",$82K - $164K (Glassdoor est.),4.0,Manufacturing,Food & Beverage Manufacturing,1d,"About Enterprise Data and Analytics:
-The Data and Analytics (DnA) Services organization is transforming how Coca-Cola leverages data across the entire company. We passionately develop and scale leading data capabilities for Coca-Cola, driving growth and delighting consumers through innovation and agile, insight-led decision making.
-Job Description Summary:
-You will play a critical role in the growing Data Science Services team in DnA, where you will be responsible for developing advanced analytics and machine learning models across domains including: marketing, supply chain optimization, forecasting, digital transformation, and food and beverage science. You will work closely with IT partners, process owners and business stakeholders to deliver impactful data science solutions at significant scale. You will have the opportunity to do your best work every day and deliver disruptive innovation by tapping into new datasets, leveraging the latest cloud technologies, and being supported by a robust analytics and IT organization."
-Northrop Grumman,Principal Data Scientist – Digital Transformation – 6423,"Roy, UT",Employer Provided Salary:$96K - $152K,4.0,Aerospace & Defense,Aerospace & Defense,4d,"Requisition ID: R10047239
-Category: Research and Sciences
-Location: Roy, Utah, United States of America
-Citizenship Required: United States Citizenship
-Clearance Type: Secret
-Telecommute: No- Teleworking not available for this position
-Shift: 1st Shift (United States of America)
-Travel Required: Yes, 10% of the Time
-Positions Available: 1
-
-At Northrop Grumman, our employees have incredible opportunities to work on revolutionary systems that impact people's lives around the world today, and for generations to come. Our pioneering and inventive spirit has enabled us to be at the forefront of many technological advancements in our nation's history - from the first flight across the Atlantic Ocean, to stealth bombers, to landing on the moon. We look for people who have bold new ideas, courage and a pioneering spirit to join forces to invent the future, and have fun along the way. Our culture thrives on intellectual curiosity, cognitive diversity and bringing your whole self to work — and we have an insatiable drive to do what others think is impossible. Our employees are not only part of history, they're making history."
-North Carolina Dept of Health and Human Services,Bioinformatics Data Scientist,"Wake Forest, NC",Employer Provided Salary:$52K - $93K,3.6,Not given,Not given,5d,"***This is a Time-Limited Full-Time position. ***
-The Infectious Diseases Section at the NC State Laboratory of Public Health is currently accepting applications for a Bioinformatics Data Scientist. The primary purpose of this position is to work with the sequencing and bioinformatics manager and colleagues to implement expanded capacity for data analysis to support epidemiology investigations, data visualization, and genomic data integration to support public health response.
-This POSITION WILL:
-
-Develop and implement bioinformatic dashboards for communication to colleagues, epidemiologic partners, and the general public.
-Research and improve bioinformatic analyses to facilitate communication in on-going outbreak investigations.
-Support CLIA validations of bioinformatic pipelines.
-
-
-
-
-
-
-
-The NC Division of Public Health (DPH) works to promote and contribute to the highest possible level of health for the people of North Carolina – Everywhere, Everyday, Everybody."
-DispatchHealth,Staff Data Scientist,"San Francisco, CA",Employer Provided Salary:$180K - $210K,3.1,Healthcare,Health Care Services & Hospitals,30d+,"Company Description
-We are building the world's largest in-home care system.
-Healthcare is rapidly moving into the home, creating an enormous market opportunity that's growing daily as consumers increasingly demand more convenient healthcare options.
-Technology is the engine that powers our foundation. It ensures we can reach massive scale and drives differentiation from any other healthcare company entering this space. We're using data to ensure patient safety and tailor the care to patients' specific needs which allows for better care delivery from patient onboarding, patient care, and post care follow-up.
-DispatchHealth is a Series D startup with more than $400m in funding and a $1B+ valuation. We're backed by Oak, Tiger Global, Alta Partners, Optum Ventures, Questa Capital, ad EchoHealth Ventures."
-Nike,"Sr Data Scientist- (Advanced Analytics) (Open to remote work, except the following locations: SD, VT, and WV)","Beaverton, OR",Employer Provided Salary:$140K,4.1,Manufacturing,Consumer Product Manufacturing,24h,"Become a Part of the NIKE, Inc. Team
-NIKE, Inc. does more than outfit the world’s best athletes. It is a place to explore potential, obliterate boundaries and push out the edges of what can be. The company looks for people who can grow, think, dream and create. Its culture thrives by embracing diversity and rewarding imagination. The brand seeks achievers, leaders and visionaries. At NIKE, Inc. it’s about each person bringing skills and passion to a challenging and constantly evolving game.
-Analytics is a competitive differentiator for Nike and is fundamentally changing how the company serves athletes and consumers around the world! The Nike Commercial Analytics team builds analytic-based solutions to manage marketplace and optimize the supply chain. Using big data, advanced analytics and state-of-the-art technology, we strive to ensure that Nike gets the right product to the right place at the right time for the consumers."
-Humanity,Data Scientist – Remote,"Cincinnati, OH",$51K - $97K (Glassdoor est.),3.8,Not given,Not given,4d,"Company Description
-
-Jobs for Humanity is dedicated to building an inclusive and just employment ecosystem. Therefore, we have dedicated this job posting to individuals coming from the following communities: Refugee, Neurodivergent, Single Parent, Blind or Low Vision, Ethnic Minority, and the Previously Incarcerated. If you identify with any of the following communities do not hesitate to register, even if you feel that this particular opportunity is not the right fit for you.
-
-Company Name: NielsenIQ
-
-Job Description
-
-Company Description"
-The Coca-Cola Company,Data Scientist 2,"Plano, TX",$82K - $164K (Glassdoor est.),4.0,Manufacturing,Food & Beverage Manufacturing,1d,"About Enterprise Data and Analytics:
-The Data and Analytics (DnA) Services organization is transforming how Coca-Cola leverages data across the entire company. We passionately develop and scale leading data capabilities for Coca-Cola, driving growth and delighting consumers through innovation and agile, insight-led decision making.
-Job Description Summary:
-You will play a critical role in the growing Data Science Services team in DnA, where you will be responsible for developing advanced analytics and machine learning models across domains including: marketing, supply chain optimization, forecasting, digital transformation, and food and beverage science. You will work closely with IT partners, process owners and business stakeholders to deliver impactful data science solutions at significant scale. You will have the opportunity to do your best work every day and deliver disruptive innovation by tapping into new datasets, leveraging the latest cloud technologies, and being supported by a robust analytics and IT organization."
-Brilliant Infotech,Sr IT Data Scientist,Remote,Employer Provided Salary:$65 - $70 Per Hour,4.5,Information Technology,Information Technology Support Services,2d,"Job Description:
-The IT Data Scientist position is responsible for defining, planning and managing data analysis initiatives that applies data science principles and technology to develop innovative, high-quality technology solutions to solve complex operational problems and process challenges.
-The IT Data Scientist identifies opportunities through the use of statistical, algorithmic, mining and visualization techniques.
-The role requires advanced analytical skills and proficiency at integrating and preparing large, varied datasets, architecting specialized data structures and computing environments, and effectively communicating results.
-The IT Data Scientist works closely with IT application and database teams, along with business and operational subject matter experts."

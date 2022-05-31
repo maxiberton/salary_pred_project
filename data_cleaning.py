@@ -1,4 +1,3 @@
-import pandas as pd
 import numpy as np
 
 
@@ -54,3 +53,11 @@ def get_job_age_in_days_as_floats(job_age):
         return float(job_age.split('d')[0])
     if 'h' in job_age:
         return float(job_age.split('h')[0])/24
+
+
+def get_company_age_by_year_founded(df):
+    df['company_age'] = np.where(df.year_founded.str.len() > 4, '-1.0', df.year_founded)
+    df['company_age'] = df['company_age'].astype(float)
+    df['company_age'] = 2022 - df['company_age']
+    df['company_age'] = np.where(df.company_age > 2022.0, -1.0, df.company_age)
+    return df

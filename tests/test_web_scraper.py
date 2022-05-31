@@ -19,7 +19,7 @@ driver.get(url)
 def test_count_jobs_in_the_page():
     job_buttons = driver.find_elements(by=By.CLASS_NAME,
                                        value='react-job-listing')
-    assert 30 == len(job_buttons)
+    assert len(job_buttons) == 30
 
 
 def test_get_first_two_company_names():
@@ -36,8 +36,8 @@ def test_get_first_two_company_names():
         pass
     company_name_2 = driver.find_element(by=By.CSS_SELECTOR,
                                          value='.css-xuk5ye').text
-    assert 'LG Energy Solution Michigan, Inc.' == company_name_1.split('\n')[0]
-    assert 'Myticas Consulting' == company_name_2.split('\n')[0]
+    assert company_name_1.split('\n')[0] == 'LG Energy Solution Michigan, Inc.'
+    assert company_name_2.split('\n')[0] == 'Myticas Consulting'
 
 
 def test_xpath_with_contains_works():
@@ -64,4 +64,5 @@ def test_when_clicked_next_button_turns_page():
 
 def test_how_many_ages_does_the_query_brings():
     job_ages = driver.find_elements(by=By.XPATH, value='//div[@data-test="job-age"]')
-    assert 30 == len(job_ages)
+    assert len(job_ages) == 30
+

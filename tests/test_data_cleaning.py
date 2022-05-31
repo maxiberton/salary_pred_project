@@ -16,6 +16,7 @@ job_mock_data = {
         'PLG Energy Solution (LGES) Vertech aWs pytHON EXcel SPARK.',
         'JobDescription',
     ],
+    'year_founded': ['1990', '-1.0', 'Private Company'],
     'job_age': ['4d', '24h', float('nan')],
     'rating': ['3.2', '4.5', 'Not given'],
     'sector': ['Manufacturing', 'Information Technology', 'Other Sector'],
@@ -77,3 +78,11 @@ def test_get_job_age_in_days_as_floats():
     assert 4.0 == df.job_age[0]
     assert 1.0 == df.job_age[1]
     assert '' == df.job_age[2]
+
+
+def test_get_company_age_by_year_founded():
+    df = mock_df.copy()
+    df = get_company_age_by_year_founded(df)
+    assert df.company_age.loc[0] == 32.0
+    assert df.company_age.loc[1] == -1.0
+    assert df.company_age.loc[2] == -1.0

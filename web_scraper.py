@@ -24,21 +24,28 @@ def get_jobs(keywords: list, chrome_path, slp_time, num_jobs):
         job_buttons = driver.find_elements(by=By.CLASS_NAME,
                                            value='react-job-listing')
         job_ages = driver.find_elements(by=By.XPATH, value='//div[@data-test="job-age"]')
+
         for age, job_button in enumerate(job_buttons):
+
             try:
-                driver.find_element(by=By.CSS_SELECTOR, value='[alt="Close"]').click()
+                close_button = driver.find_element(by=By.CSS_SELECTOR,
+                                                   value='[alt="Close"]')
+                WebDriverWait(driver, slp_time) \
+                    .until(ec.element_to_be_clickable(close_button)) \
+                    .click()
             except NoSuchElementException:
                 pass
             print(f"Progress: {str(len(jobs)) + '/' + str(num_jobs)}")
             if len(jobs) >= num_jobs:
                 break
 
-            try:
-                WebDriverWait(driver, slp_time) \
-                    .until(ec.element_to_be_clickable(job_button)) \
-                    .click()
-            except NoSuchElementException:
-                pass
+            job_button.click()
+            # try:
+            #     WebDriverWait(driver, slp_time) \
+            #         .until(ec.element_to_be_clickable(job_button)) \
+            #         .click()
+            # except NoSuchElementException:
+            #     pass
 
             time.sleep(slp_time)
             collected_successfully = False
@@ -55,16 +62,21 @@ def get_jobs(keywords: list, chrome_path, slp_time, num_jobs):
                                                           value='jobDescriptionContent').text
 
                     job_age = job_ages[age].text
-                    job_salary = 'Not given'
-                    rating = 'Not given'
-                    sector = 'Not given'
-                    industry = 'Not given'
+                    job_salary = '-1.0'
+                    year_founded = '-1.0'
+                    rating = '-1.0'
+                    sector = '-1.0'
+                    industry = '-1.0'
 
                     collected_successfully = True
                     if driver.find_element(by=By.XPATH,
                                            value='//*[@id="JDCol"]/div/article/div/div[1]/div/div/div[1]/div[3]/div[1]/div[4]/span'):
                         job_salary = driver.find_element(by=By.XPATH,
                                                          value='//*[@id="JDCol"]/div/article/div/div[1]/div/div/div[1]/div[3]/div[1]/div[4]/span').text
+                    if driver.find_element(by=By.XPATH,
+                                           value='//*[@id="EmpBasicInfo"]/div[1]/div/div[2]/span[2]'):
+                        year_founded = driver.find_element(by=By.XPATH,
+                                                           value='//*[@id="EmpBasicInfo"]/div[1]/div/div[2]/span[2]').text
                     if driver.find_element(by=By.CSS_SELECTOR, value='.css-1m5m32b'):
                         rating = driver.find_element(by=By.CSS_SELECTOR, value='.css-1m5m32b').text
                     if driver.find_element(by=By.XPATH, value='//*[text()="Industry"]/following-sibling::span'):
@@ -90,6 +102,7 @@ def get_jobs(keywords: list, chrome_path, slp_time, num_jobs):
                             'sector': sector,
                             'industry': industry,
                             'job_age': job_age,
+                            'year_founded': year_founded,
                             'job_description': job_description,
                         },
                         index=[0],
