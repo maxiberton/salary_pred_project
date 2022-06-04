@@ -47,7 +47,7 @@ def convert_given_ratings_to_float(rat):
 
 
 def get_job_age_in_days_as_floats(job_age):
-    if type(job_age) == np.float:
+    if isinstance(job_age, float):
         return ''
     if 'd' in job_age:
         return float(job_age.split('d')[0])
